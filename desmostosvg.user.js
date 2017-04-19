@@ -3,6 +3,7 @@
 // @namespace   https://github.com/baz1/DesmosToSVG
 // @description Desmos SVG generator
 // @include     https://www.desmos.com/calculator
+// @include     https://www.desmos.com/calculator/*
 // @version     1
 // @grant       none
 // @require     https://raw.githubusercontent.com/gliffy/canvas2svg/master/canvas2svg.js
@@ -52,7 +53,7 @@ function main() {
     return;
   }
   graph = graph[0];
-  var floaters = document.getElementsByClassName("right-floaters");
+  var floaters = document.getElementsByClassName("align-right-container");
   if (floaters.length != 1) {
     console.log("GM_DesmosSVG: Floaters object not found, or several found.");
     return;
